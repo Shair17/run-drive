@@ -1,10 +1,22 @@
+import './normalize.css';
 import './style.css';
-import { setupCounter } from './counter.js';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <h1>Hello World!</h1>
-  </div>
-`;
+const $ = (el) => document.querySelector(el);
+const btnMenuOpen = $('.open-menu');
+const btnMenuClose = $('.close-menu');
 
-setupCounter(document.querySelector('#counter'));
+const openMenu = () => {
+	const body = document.querySelector('body');
+	body.classList.add('menu-expanded');
+	btnMenuClose.classList.add('relative');
+	// element.classList.toggle("mystyle");
+};
+
+const closeMenu = () => {
+	const body = document.querySelector('body');
+	body.classList.remove('menu-expanded');
+	btnMenuClose.classList.remove('relative');
+};
+
+btnMenuOpen.addEventListener('click', openMenu);
+btnMenuClose.addEventListener('click', closeMenu);

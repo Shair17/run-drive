@@ -4,10 +4,223 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Run Drive App</title>
+		<title>Run Drive</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<div id="app"></div>
+		<div id="app">
+			<header class="header">
+				<div class="wrapper">
+					<!-- LOGO -->
+					<a href="#home" class="logo">
+						<img src="/assets/images/LOGO.jpg" alt="" class="logo_image" />
+					</a>
+					<!-- END LOGO -->
+
+					<!-- MENU -->
+					<div class="menu">
+						<ul class="menu-links">
+							<li><a href="#home">Inicio</a></li>
+							<li><a href="#services">Servicios</a></li>
+							<li><a href="#about">Quienes Somos</a></li>
+							<li><a href="#about">Contacto</a></li>
+						</ul>
+						<div class="social_media">
+							<div class="media_links">
+								<svg
+									class="social_icon"
+									width="26"
+									height="27"
+									viewBox="0 0 26 27"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M7.54 0.25H18.46C22.62 0.25 26 3.63 26 7.79V18.71C26 20.7097 25.2056 22.6276 23.7916 24.0416C22.3776 25.4556 20.4597 26.25 18.46 26.25H7.54C3.38 26.25 0 22.87 0 18.71V7.79C0 5.79027 0.794391 3.87244 2.20842 2.45842C3.62244 1.04439 5.54027 0.25 7.54 0.25ZM7.28 2.85C6.03879 2.85 4.84841 3.34307 3.97074 4.22074C3.09307 5.09841 2.6 6.28879 2.6 7.53V18.97C2.6 21.557 4.693 23.65 7.28 23.65H18.72C19.9612 23.65 21.1516 23.1569 22.0293 22.2793C22.9069 21.4016 23.4 20.2112 23.4 18.97V7.53C23.4 4.943 21.307 2.85 18.72 2.85H7.28ZM19.825 4.8C20.256 4.8 20.6693 4.9712 20.974 5.27595C21.2788 5.5807 21.45 5.99402 21.45 6.425C21.45 6.85598 21.2788 7.2693 20.974 7.57405C20.6693 7.87879 20.256 8.05 19.825 8.05C19.394 8.05 18.9807 7.87879 18.6759 7.57405C18.3712 7.2693 18.2 6.85598 18.2 6.425C18.2 5.99402 18.3712 5.5807 18.6759 5.27595C18.9807 4.9712 19.394 4.8 19.825 4.8ZM13 6.75C14.7239 6.75 16.3772 7.43482 17.5962 8.65381C18.8152 9.87279 19.5 11.5261 19.5 13.25C19.5 14.9739 18.8152 16.6272 17.5962 17.8462C16.3772 19.0652 14.7239 19.75 13 19.75C11.2761 19.75 9.62279 19.0652 8.40381 17.8462C7.18482 16.6272 6.5 14.9739 6.5 13.25C6.5 11.5261 7.18482 9.87279 8.40381 8.65381C9.62279 7.43482 11.2761 6.75 13 6.75ZM13 9.35C11.9657 9.35 10.9737 9.76089 10.2423 10.4923C9.51089 11.2237 9.1 12.2157 9.1 13.25C9.1 14.2843 9.51089 15.2763 10.2423 16.0077C10.9737 16.7391 11.9657 17.15 13 17.15C14.0343 17.15 15.0263 16.7391 15.7577 16.0077C16.4891 15.2763 16.9 14.2843 16.9 13.25C16.9 12.2157 16.4891 11.2237 15.7577 10.4923C15.0263 9.76089 14.0343 9.35 13 9.35Z"
+										fill="currentColor"
+									/>
+								</svg>
+
+								<svg
+									class="social_icon"
+									width="24"
+									height="25"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M22.67 0.25H1.33C0.978071 0.252617 0.641298 0.393581 0.39244 0.64244C0.143581 0.891298 0.00261668 1.22807 0 1.58V22.92C0.00261668 23.2719 0.143581 23.6087 0.39244 23.8576C0.641298 24.1064 0.978071 24.2474 1.33 24.25H12.82V14.97H9.7V11.34H12.82V8.67C12.82 5.57 14.71 3.88 17.49 3.88C18.42 3.88 19.35 3.88 20.28 4.02V7.25H18.37C16.86 7.25 16.57 7.97 16.57 9.02V11.33H20.17L19.7 14.96H16.57V24.25H22.67C23.0219 24.2474 23.3587 24.1064 23.6076 23.8576C23.8564 23.6087 23.9974 23.2719 24 22.92V1.58C23.9974 1.22807 23.8564 0.891298 23.6076 0.64244C23.3587 0.393581 23.0219 0.252617 22.67 0.25Z"
+										fill="currentColor"
+									/>
+								</svg>
+							</div>
+							<button class="whatsapp">
+								<svg
+									fill="none"
+									stroke="currentColor"
+									stroke-width="1.5"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+									aria-hidden="true"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+									></path>
+								</svg>
+
+								<span>+52442343323</span>
+							</button>
+						</div>
+						<ul class="social-links">
+							<li>
+								<a target="_blank" href="https://www.facebook.com/">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+											stroke="#FFFAF1"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+											stroke="#FFFAF1"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M17.5 6.49997H17.51"
+											stroke="#FFFAF1"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.instagram.com/">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
+											stroke="#FFFAF1"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.youtube.com/">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
+											stroke="#FFFAF1"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z"
+											stroke="#FFFAF1"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- END MENU -->
+
+					<button
+						aria-expanded="false"
+						aria-label="Abrir menu"
+						class="open-menu"
+					>
+						<svg
+							width="40"
+							height="40"
+							viewBox="0 0 40 40"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M10 20H30"
+								stroke="#00856F"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M10 12H30"
+								stroke="#00856F"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M18 28L30 28"
+								stroke="#00856F"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</button>
+					<button
+						aria-expanded="true"
+						aria-label="Fechar menu"
+						class="close-menu"
+					>
+						<svg
+							width="40"
+							height="40"
+							viewBox="0 0 40 40"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M30 10L10 30M10 10L30 30"
+								stroke="#FFFAF1"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</button>
+				</div>
+			</header>
+		</div>
 		<script type="module" src="/main.js"></script>
 	</body>
 </html>

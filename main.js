@@ -9,7 +9,6 @@ const openMenu = () => {
 	const body = document.querySelector('body');
 	body.classList.add('menu-expanded');
 	btnMenuClose.classList.add('relative');
-	// element.classList.toggle("mystyle");
 };
 
 const closeMenu = () => {

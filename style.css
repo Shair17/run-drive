@@ -359,6 +359,60 @@ body.menu-expanded button path {
 	margin: 0;
 }
 
+.booking_container {
+	background-color: #f0f9ff;
+	border-radius: 8px;
+	padding: 4rem;
+}
+
+.booking_container .title {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 1.5rem !important;
+	color: #22262a !important;
+	font-size: 3.5rem !important;
+	font-weight: bold !important;
+}
+
+.booking_content {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.booking_item {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.booking_item .field {
+	display: flex;
+	flex-direction: column;
+}
+
+.field label {
+	text-align: left;
+}
+
+.textarea {
+	display: block;
+	max-width: 100%;
+	min-width: 100%;
+	padding: calc(0.75em - 1px);
+	resize: vertical;
+}
+
+.textarea:not([rows]) {
+	max-height: 40em;
+	min-height: 8em;
+}
+
+.textarea[rows] {
+	height: initial;
+}
+
 /* ======== SECTION SERVICES ======== */
 
 #services h2 {
@@ -680,6 +734,14 @@ footer .social-links-footer {
 		text-align: right;
 	}
 
+	.booking_content {
+		flex-direction: row;
+	}
+
+	.booking_container .title {
+		text-align: left;
+	}
+
 	/* ============== SERVICES ================ */
 
 	#services h2 {
@@ -741,6 +803,11 @@ footer .social-links-footer {
 .menu-links li a {
 	text-transform: uppercase;
 	font-size: 13px !important;
+}
+
+.cta_container {
+	display: flex;
+	justify-content: center;
 }
 
 .cta_button {

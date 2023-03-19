@@ -455,13 +455,13 @@ textarea:focus {
 	margin-bottom: 6rem;
 }
 
-#services .cards {
+/* #services .cards {
 	display: flex;
 	flex-flow: column;
 	gap: 3.2rem;
-}
+} */
 
-#services .card {
+/* #services .card {
 	display: flex;
 	gap: 1.6rem;
 	flex-flow: column;
@@ -470,13 +470,35 @@ textarea:focus {
 	background-color: white;
 	padding: 2.4rem;
 	border-radius: 0.6rem;
-}
+} */
 
-#services .card p {
+/* #services .card p {
 	font-weight: 400;
 	font-size: 1.6rem;
 	line-height: 150%;
 	color: var(--paragraph);
+} */
+
+.cards {
+	display: flex;
+	gap: 4rem;
+	width: 100%;
+}
+
+.card {
+	width: 15rem;
+	height: 15rem;
+	position: relative;
+}
+
+.card .image {
+	position: absolute;
+	inset: 0;
+	background-image: url('/assets/images/SERVICIO HOJALATERIA Y PINTURA IMG 2.png');
+}
+
+.snap-center {
+	scroll-snap-align: center;
 }
 
 /* ======== SECTION ABOUT ======== */
@@ -789,7 +811,7 @@ footer .social-links-footer {
 		margin-inline: auto;
 	}
 
-	#services .cards {
+	/* #services .cards {
 		flex-direction: row;
 		flex-wrap: wrap;
 		gap: 4rem;
@@ -798,7 +820,7 @@ footer .social-links-footer {
 	#services .card {
 		width: 30%;
 		flex-grow: 1;
-	}
+	} */
 
 	/* ============== ABOUT ================ */
 

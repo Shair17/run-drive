@@ -388,7 +388,8 @@ body.menu-expanded button path {
 	gap: 2rem;
 }
 
-.booking_item .field {
+.booking_item .field,
+.field {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
@@ -483,28 +484,33 @@ textarea:focus {
 	scroll-snap-align: center;
 }
 
-#about-us .wrapper .heading-content {
+#about-us .wrapper .heading-content,
+#contact .wrapper .heading-content {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-#about-us .wrapper .heading-content h2 {
+#about-us .wrapper .heading-content h2,
+#contact .wrapper .heading-content h2 {
 	flex: 1;
 	width: 100%;
 }
 
-#about-us .wrapper .heading-content hr {
+#about-us .wrapper .heading-content hr,
+#contact .wrapper .heading-content hr {
 	display: none;
 }
 
-#about-us .wrapper .content .cards {
+#about-us .wrapper .content .cards,
+#contact .wrapper .content .cards {
 	display: flex;
 	flex-flow: column;
 	gap: 3.2rem;
 }
 
-#about-us .wrapper .content .cards .card {
+#about-us .wrapper .content .cards .card,
+#contact .wrapper .content .cards .card {
 	display: flex;
 	/* gap: 1.6rem; */
 	flex-flow: column;
@@ -834,20 +840,23 @@ footer .social-links-footer {
 		flex-grow: 1;
 	} */
 
-	#about-us .wrapper .heading-content hr {
+	#about-us .wrapper .heading-content hr,
+	#contact .wrapper .heading-content hr {
 		display: block;
 		width: 25%;
 		height: 1px;
 		background-color: #000;
 	}
 
-	#about-us .wrapper .content .cards {
+	#about-us .wrapper .content .cards,
+	#contact .wrapper .content .cards {
 		flex-direction: row;
 		flex-wrap: wrap;
 		gap: 4rem;
 	}
 
-	#about-us .wrapper .content .cards .card {
+	#about-us .wrapper .content .cards .card,
+	#contact .wrapper .content .cards .card {
 		width: 30%;
 		flex-grow: 1;
 	}

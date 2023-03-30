@@ -94,7 +94,7 @@ section header h4 {
 }
 
 /* CUSTOM COLORS  */
-
+/*
 #services .card circle {
 	fill: var(--brand-ligth);
 }
@@ -107,7 +107,7 @@ section header h4 {
 #services .card path,
 button.open-menu path[stroke*='#00856F'],
 #contact p path {
-	/*stroke: var(--primary-color);*/
+	/*stroke: var(--primary-color);
 }
 
 .header.scroll button.open-menu path[stroke*='#00856F'] {
@@ -119,6 +119,8 @@ button.open-menu path[stroke*='#00856F'],
 .header.scroll .logo path[fill*='#00856F'] {
 	fill: white;
 }
+
+*/
 
 .header.header .menu .media_links {
 	display: none;
@@ -142,7 +144,8 @@ button.open-menu path[stroke*='#00856F'],
 }
 
 .header.scroll {
-	background-color: var(--primary-color);
+	background-color:rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(10.5px);
 }
 
 .header .menu,
@@ -287,6 +290,8 @@ body.menu-expanded button path {
 
 #home {
 	padding-top: calc(4.1rem + var(--nav-heigth));
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)), url(./public/assets/images/IMG.INICIO.HOJALATERIA\ Y\ PINTURA.png);
+	background-size: cover;
 }
 
 #home::before {
@@ -303,9 +308,9 @@ body.menu-expanded button path {
 }
 
 #home h1 {
-	margin-bottom: 2.4rem;
+	margin-bottom: 0.5rem;
 	font-size: 3.4rem;
-	color: var(--headline);
+	color:rgba(255, 255, 255, 0.958);
 	line-height: 130%;
 }
 
@@ -313,8 +318,8 @@ body.menu-expanded button path {
 	font-size: 1.8rem;
 	line-height: 150%;
 	font-weight: 400;
-	color: var(--paragraph);
-	margin-bottom: 3.2rem;
+	color:rgba(255, 255, 255, 0.850);
+	margin-bottom: 1.2rem;
 }
 
 #home img {
@@ -718,7 +723,7 @@ footer .social-links-footer {
 
 	.header.header .menu ul li a {
 		line-height: 2.1rem;
-		color: var(--primary-color);
+		color: white;
 		opacity: 0.7;
 	}
 
@@ -764,7 +769,7 @@ footer .social-links-footer {
 		content: '';
 		width: 0%;
 		height: 2px;
-		background-color: var(--primary-color);
+		background-color: white;
 		position: relative;
 		bottom: -2rem;
 		left: -0.8rem;
@@ -968,7 +973,7 @@ footer .social-links-footer {
 
 .heading_content h4 {
 	font-size: 1.4rem;
-	color: var(--primary-color);
+	color: #2970fff0;
 	line-height: 150%;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;

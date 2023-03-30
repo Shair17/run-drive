@@ -7,12 +7,35 @@
 		<title>Run Drive</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
 	</head>
 	<body>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+		<script>
+			$(document).ready(function() {
+			  $('.slider').slick({
+				infinite: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				dots: true,
+				autoplay: true,
+				autoplaySpeed: 5000,
+				speed: 1000,
+				responsive: [{
+				  breakpoint: 768,
+				  settings: {
+					arrows: false,
+					dots: true,
+				  },
+				}, ],
+			  });
+			});
+		</script>
+		  
 		<div id="app">
 			<header class="header">
 				<div class="wrapper">
@@ -44,7 +67,7 @@
 					<!-- MENU -->
 					<div class="menu">
 						<ul class="menu-links">
-							<li><a href="#home">Inicio</a></li>
+							<li><a href="#homesec">Inicio</a></li>
 							<li><a href="#services">Servicios</a></li>
 							<li><a href="#about-us">Quienes Somos</a></li>
 							<li><a href="#contact">Contacto</a></li>
@@ -236,93 +259,127 @@
 					</button>
 				</div>
 			</header>
-
-			<section id="home">
-				<div class="wrapper">
-					<!-- HEADING -->
-					<div class="heading">
-						<div class="heading_content">
-							<h4>Servicio de calidad 🔥</h4>
-							<h1>Hojalatería y pintura</h1>
-							<p>
-								En Run Drive, devolvemos la belleza original a tu coche. Confía
-								en nosotros para cuidar cada detalle y darle la atención que se
-								merece.
-							</p>
-
-							<div class="cta_container">
-								<button class="cta_button">
-									<span class="text">COTIZA AQUÍ</span>
-									<span class="arrow">
-										<svg
-											width="15"
-											height="20"
-											viewBox="0 0 15 24"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M0.666171 0.63142C0.454998 0.830271 0.287461 1.06647 0.17315 1.32649C0.0588397 1.58651 0 1.86526 0 2.14676C0 2.42827 0.0588397 2.70701 0.17315 2.96704C0.287461 3.22706 0.454998 3.46326 0.666171 3.66211L9.50459 12.0019L0.666171 20.3416C0.240247 20.7435 0.000964553 21.2886 0.000964553 21.857C0.000964553 22.4253 0.240247 22.9704 0.666171 23.3723C1.0921 23.7742 1.66977 24 2.27212 24C2.87447 24 3.45215 23.7742 3.87807 23.3723L14.3338 13.5065C14.545 13.3076 14.7125 13.0714 14.8269 12.8114C14.9412 12.5514 15 12.2726 15 11.9911C15 11.7096 14.9412 11.4309 14.8269 11.1709C14.7125 10.9108 14.545 10.6746 14.3338 10.4758L3.87807 0.609925C3.01245 -0.206856 1.55457 -0.206856 0.666171 0.63142Z"
-												fill="white"
-											/>
-										</svg>
-									</span>
-								</button>
+			<div class="slider" id="homesec">
+				<section id="home2" class="">
+					<div class="wrapper">
+						<!-- HEADING -->
+						
+						<div class="heading">
+							<div class="heading_content">
+								<h4>LAVADO DE CALIDAD 🔥</h4>
+								<h1>Autolavado</h1>
+								<p>
+									En Run Drive, cuidamos tu coche con nuestro servicio de autolavado profesional y detallado. ¡Déjanos mantener tu coche en óptimas condiciones y hacerlo lucir como nuevo en poco tiempo!
+								</p>
+	
+								<div class="cta_container">
+									<button class="cta_button">
+										<span class="text">COTIZA AQUÍ</span>
+										<span class="arrow">
+											<svg
+												width="15"
+												height="20"
+												viewBox="0 0 15 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0.666171 0.63142C0.454998 0.830271 0.287461 1.06647 0.17315 1.32649C0.0588397 1.58651 0 1.86526 0 2.14676C0 2.42827 0.0588397 2.70701 0.17315 2.96704C0.287461 3.22706 0.454998 3.46326 0.666171 3.66211L9.50459 12.0019L0.666171 20.3416C0.240247 20.7435 0.000964553 21.2886 0.000964553 21.857C0.000964553 22.4253 0.240247 22.9704 0.666171 23.3723C1.0921 23.7742 1.66977 24 2.27212 24C2.87447 24 3.45215 23.7742 3.87807 23.3723L14.3338 13.5065C14.545 13.3076 14.7125 13.0714 14.8269 12.8114C14.9412 12.5514 15 12.2726 15 11.9911C15 11.7096 14.9412 11.4309 14.8269 11.1709C14.7125 10.9108 14.545 10.6746 14.3338 10.4758L3.87807 0.609925C3.01245 -0.206856 1.55457 -0.206856 0.666171 0.63142Z"
+													fill="white"
+												/>
+											</svg>
+										</span>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
-					<!-- END HEADING -->
+				</section>
 
-					<!-- AGENDAR CITA -->
-					<div class="booking_container">
-						<p class="title">Agenda tu cita</p>
-						<form class="booking_content">
-							<div class="booking_item">
-								<div class="field">
-									<label for="name">Nombre(s)</label>
-									<input
-										id="name"
-										type="text"
-										class="input"
-										placeholder="Juan Alberto Lope S."
-									/>
-								</div>
-								<div class="field">
-									<label for="phoneNumber">Número</label>
-									<input
-										id="phoneNumber"
-										type="text"
-										class="input"
-										placeholder="234543342"
-									/>
-								</div>
-								<div class="field">
-									<label for="email">Correo</label>
-									<input
-										id="email"
-										type="email"
-										class="input"
-										placeholder="j.albert@gmail.com"
-									/>
+				<section id="home3" class="">
+					<div class="wrapper">
+						<!-- HEADING -->
+						
+						<div class="heading">
+							<div class="heading_content">
+								<h4>SERVICIO DE CALIDAD 🔥</h4>
+								<h1>Hojalatería y pintura</h1>
+								<p>
+									En Run Drive, devolvemos la belleza original a tu coche. Confía en nosotros para cuidar cada detalle y darle la atención que se merece.
+								</p>
+	
+								<div class="cta_container">
+									<button class="cta_button">
+										<span class="text">COTIZA AQUÍ</span>
+										<span class="arrow">
+											<svg
+												width="15"
+												height="20"
+												viewBox="0 0 15 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0.666171 0.63142C0.454998 0.830271 0.287461 1.06647 0.17315 1.32649C0.0588397 1.58651 0 1.86526 0 2.14676C0 2.42827 0.0588397 2.70701 0.17315 2.96704C0.287461 3.22706 0.454998 3.46326 0.666171 3.66211L9.50459 12.0019L0.666171 20.3416C0.240247 20.7435 0.000964553 21.2886 0.000964553 21.857C0.000964553 22.4253 0.240247 22.9704 0.666171 23.3723C1.0921 23.7742 1.66977 24 2.27212 24C2.87447 24 3.45215 23.7742 3.87807 23.3723L14.3338 13.5065C14.545 13.3076 14.7125 13.0714 14.8269 12.8114C14.9412 12.5514 15 12.2726 15 11.9911C15 11.7096 14.9412 11.4309 14.8269 11.1709C14.7125 10.9108 14.545 10.6746 14.3338 10.4758L3.87807 0.609925C3.01245 -0.206856 1.55457 -0.206856 0.666171 0.63142Z"
+													fill="white"
+												/>
+											</svg>
+										</span>
+									</button>
 								</div>
 							</div>
-							<div class="booking_item">
-								<div class="field">
-									<label for="information">Cuentamos tu problema</label>
-									<textarea
-										id="information"
-										class="textarea"
-										placeholder="Lo que pasa es que..."
-									></textarea>
-								</div>
-								<div class="field">
-									<button class="button">Enviar</button>
-								</div>
-							</div>
-						</form>
+						</div>
 					</div>
-					<!-- END AGENDAR CITA -->
-				</div>
-			</section>
+				</section>
+				
+
+			</div>
+			<div class="booking_container">
+				<p class="title">Agenda tu cita</p>
+				<form class="booking_content">
+					<div class="booking_item">
+						<div class="field">
+							<label for="name">Nombre(s)</label>
+							<input
+								id="name"
+								type="text"
+								class="input"
+								placeholder="Juan Alberto Lope S."
+							/>
+						</div>
+						<div class="field">
+							<label for="phoneNumber">Número</label>
+							<input
+								id="phoneNumber"
+								type="text"
+								class="input"
+								placeholder="234543342"
+							/>
+						</div>
+						<div class="field">
+							<label for="email">Correo</label>
+							<input
+								id="email"
+								type="email"
+								class="input"
+								placeholder="j.albert@gmail.com"
+							/>
+						</div>
+					</div>
+					<div class="booking_item">
+						<div class="field">
+							<label for="information">Cuentamos tu problema</label>
+							<textarea
+								id="information"
+								class="textarea"
+								placeholder="Lo que pasa es que..."
+							></textarea>
+						</div>
+						<div class="field">
+							<button class="button">Enviar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			
 
 			<section id="services">
 				<div class="wrapper">

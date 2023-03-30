@@ -260,10 +260,9 @@ body.menu-expanded .menu {
 	color: #fff !important;
 }
 
-.social_icon {
+.social_icon svg {
 	width: 30px;
 	height: 30px;
-	color: #000 !important;
 }
 
 .open-menu,

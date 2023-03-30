@@ -290,7 +290,7 @@ body.menu-expanded button path {
 
 #home {
 	padding-top: calc(4.1rem + var(--nav-heigth));
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)), url(./assets/images/IMG.INICIO.HOJALATERIA\ Y\ PINTURA.png);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)), url(assets/images/IMG.INICIO.HOJALATERIA\ Y\ PINTURA.png);
 	background-size: cover;
 }
 

@@ -534,7 +534,6 @@ body.menu-expanded button path {
 	padding: 4rem;
 	width: 90vw;
 	position: absolute;
-	top: 70vh;
 	left: calc((100vw - 90vw)/2);
 
 }
@@ -736,6 +735,12 @@ textarea:focus {
 	display: block;
 	margin-inline: auto;
 }
+
+/* Zona blanca antes de servicios para hacer espacio */
+#blankzone{
+	justify-content: center;
+}
+
 
 /* ======== SECTION CONTACT ======== */
 
@@ -1038,7 +1043,6 @@ footer .social-links-footer {
 
 	.booking_container {
 		width: 80vw;
-		top: 75vh;
 		left: calc((100vw - 90vw)/2);
 
 	}

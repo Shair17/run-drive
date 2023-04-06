@@ -339,7 +339,7 @@
 			</div>
 			<div class="booking_container" id="bookcont">
 				<p class="title">Solicita tu cotización</p>
-				<form class="booking_content">
+				<form class="booking_content" action="https://script.google.com/macros/s/AKfycbzFW2owvCU6549LR9JAcuzYrptcirJljjO0qBWi0yt7MoLwIAqy-h1SoepbIwSBpmEe/exec" method="POST">
 					<div class="booking_item">
 						<div class="field">
 							<label for="name">Nombre(s)</label>
@@ -348,7 +348,7 @@
 								type="text"
 								class="input"
 								placeholder="Juan Alberto Lope S."
-							/>
+								name="Nombre"/>
 						</div>
 						<div class="field">
 							<label for="phoneNumber">Número</label>
@@ -357,6 +357,7 @@
 								type="text"
 								class="input"
 								placeholder="234543342"
+								name="Número"
 							/>
 						</div>
 						<div class="field">
@@ -366,6 +367,7 @@
 								type="email"
 								class="input"
 								placeholder="j.albert@gmail.com"
+								name="Correo"
 							/>
 						</div>
 					</div>
@@ -376,14 +378,19 @@
 								id="information"
 								class="textarea"
 								placeholder="Lo que pasa es que..."
+								name="Problema"
 							></textarea>
 						</div>
+						<!-- <div class="field">
+							<label for="inputimagenes">Ajunta tus imagenes</label>
+							<input 
+							id="inputimagenes"
+							type="file"
+							name="Imagen"
+							>
+						</div> -->
 						<div class="field">
-							<label for="imagenes">Ajunta tus imagenes</label>
-							<input type="file">
-						</div>
-						<div class="field">
-							<button class="button">Enviar</button>
+							<button class="button" >Enviar</button>
 						</div>
 					</div>
 				</form>

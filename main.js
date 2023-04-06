@@ -59,7 +59,7 @@ const bookcontainer = document.getElementById("bookcont");
 const heigthbookcont = bookcontainer.offsetHeight;
 
 const blankspace = document.getElementById("blankzone");
-blankspace.style = `height: ${heigthbookcont/1.5}px`
+blankspace.style = `height: ${heigthbookcont/1.3}px`
 
 
 

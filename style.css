@@ -624,6 +624,73 @@ textarea:focus {
 
 /* ======== SECTION SERVICES ======== */
 
+
+
+.content{
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.tarjeta:first-child{
+	margin-left: 40px;
+}
+
+.pic1{
+	background-image: url('./assets/images/card1.png');
+}
+
+.pic2{
+	background-image: url('./assets/images/card2.png');
+}
+
+.pic3{
+	background-image: url('./assets/images/card3.png');
+}
+
+.pic4{
+	background-image: url('./assets/images/card4.png');
+}
+.tarjeta {
+	
+	background-size: cover;
+	background-position: center;
+	width: 300px;
+	height: 300px;
+	margin-right: 20px;
+	display: flex;
+	align-items: flex-end;
+	text-align: center;
+	color: black;
+  }
+
+  .tarjeta:hover .textback{
+	height: 100%;
+
+  }
+  /* .tarjeta:nth-child(1):hover .textback {
+	background-color: #a4b2ff86;
+  } */
+
+
+
+  .content a{
+	text-decoration: none;
+  } 
+
+  .textback{
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 33%;
+	transition: height 1s, background-color 0.5s;
+  }
+  
+  .tarjeta:hover {
+	cursor: pointer;
+  }
+
 #services h2 {
 	margin-bottom: 6rem;
 }
@@ -709,6 +776,8 @@ textarea:focus {
 }
 
 /* ======== SECTION ABOUT ======== */
+
+
 
 #about {
 	background-color: var(--brand-beige);
@@ -1062,10 +1131,13 @@ footer .social-links-footer {
 
 	/* ============== SERVICES ================ */
 
+
+
 	#services h2 {
 		width: 47rem;
 		margin-inline: auto;
 	}
+	
 
 	/* #services .cards {
 		flex-direction: row;

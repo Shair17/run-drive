@@ -916,6 +916,20 @@ footer .social-links-footer {
 
 /* ============== RESPONSIVO DESKTOP ================ */
 
+@media (min-width: 1400px){
+	.servicesfordesktop{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.servicesfordesktop .content{
+		justify-content: center;
+		
+	}
+}
+
+
+
 @media (min-width: 1024px) {
 	/* ============== GERAL ================ */
 	body {
@@ -1130,8 +1144,6 @@ footer .social-links-footer {
 	}
 
 	/* ============== SERVICES ================ */
-
-
 
 	#services h2 {
 		width: 47rem;

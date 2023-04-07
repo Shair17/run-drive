@@ -865,35 +865,10 @@ textarea:focus {
 /* ============== FOOTER ================ */
 
 footer {
-	background-color: var(--primary-color);
+	background-color: #00153F;
 	padding-block: 6rem;
 }
 
-footer svg.logo {
-	margin-bottom: 2.4rem;
-	display: block;
-}
-
-footer ul {
-	display: flex;
-	flex-direction: column;
-	gap: 1.2rem;
-	margin-bottom: 3.2rem;
-}
-
-footer li {
-	text-align: left;
-	font-weight: 400;
-	font-size: 1.6rem;
-	line-height: 2.1rem;
-	color: var(--brand-beige);
-}
-
-footer .social-links-footer {
-	display: flex;
-	flex-direction: row;
-	gap: 4rem;
-}
 
 /* ============== BACK TO TOP BUTTON ================ */
 
@@ -1212,19 +1187,7 @@ footer .social-links-footer {
 	footer {
 		padding-block: 8rem;
 	}
-	footer .wrapper {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	footer .social-links-footer {
-		margin-bottom: 0;
-	}
-
-	footer ul {
-		margin-bottom: 0;
-	}
+	
 }
 
 .relative {

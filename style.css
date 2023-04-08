@@ -818,7 +818,8 @@ textarea:focus {
 	flex-direction: column;
 }
 
-#contact button {
+#contact button,
+.btn-enviar {
 	background-color: var(--primary-color);
 	border: none;
 	border-radius: 4rem;
@@ -835,13 +836,15 @@ textarea:focus {
 	transition: background 200ms;
 }
 
-#contact button:hover {
+#contact button:hover,
+.btn-enviar:hover {
 	background-color: var(--brand-green-hover);
 }
 
 /* SECCION DEL MAPA */
 
 #mapsec {
+	padding-block: 0;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	height: fit-content;
@@ -852,6 +855,56 @@ textarea:focus {
 footer {
 	background-color: #00153f;
 	padding-block: 6rem;
+}
+
+.footer_title {
+	font-size: 55px;
+	margin: 2rem 0;
+	color: #fff;
+	font-weight: bold;
+}
+
+.footer_content {
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.footer_content .cards {
+	display: flex;
+	flex-flow: column;
+	gap: 3.2rem;
+}
+
+.footer_content .cards .card {
+	display: flex;
+	flex-flow: column;
+	padding: 2.4rem;
+	border-radius: 0.6rem;
+}
+
+.horario_atencion_titulo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	color: #ffffff;
+}
+
+.horario_atencion_item {
+	margin: 0;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	color: #ffffff;
 }
 
 /* ============== BACK TO TOP BUTTON ================ */
@@ -1146,7 +1199,8 @@ footer {
 
 	/* ============== CONTACT ================ */
 
-	#contact button {
+	#contact button,
+	.btn-enviar {
 		margin-bottom: 0;
 	}
 
@@ -1158,6 +1212,17 @@ footer {
 
 	footer {
 		padding-block: 8rem;
+	}
+
+	.footer_content .cards {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 4rem;
+	}
+
+	.footer_content .cards .card {
+		width: 30%;
+		flex-grow: 1;
 	}
 }
 

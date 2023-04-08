@@ -51,30 +51,24 @@ btnMenuOpen.addEventListener('click', openMenu);
 btnMenuClose.addEventListener('click', closeMenu);
 document.addEventListener('scroll', onScroll);
 
-
-
 // Medir tamaño del form de inicio
 
-const bookcontainer = document.getElementById("bookcont");
+const bookcontainer = document.getElementById('bookcont');
 const heigthbookcont = bookcontainer.offsetHeight;
 
-const blankspace = document.getElementById("blankzone");
-blankspace.style = `height: ${heigthbookcont/1.3}px`
-
-
+const blankspace = document.getElementById('blankzone');
+blankspace.style = `height: ${heigthbookcont / 1.3}px`;
 
 // Añadir top a book containter
 
-const homeelement = document.getElementById("homesec");
+const homeelement = document.getElementById('homesec');
 const heighthome = homeelement.offsetHeight;
 
+const calculartop = (x = 0) => {
+	return x / 2.4;
+};
 
-const calculartop = (x=0) =>{
-	return x/2.4
-}
+console.log('La altura del div es ' + heighthome);
+console.log('La altura dividida es ' + calculartop(heighthome));
 
-console.log("La altura del div es "+ heighthome)
-console.log( "La altura dividida es " + calculartop(heighthome))
-
-
-bookcontainer.style = `top: ${calculartop(heighthome)}px `
+bookcontainer.style = `top: ${calculartop(heighthome)}px `;

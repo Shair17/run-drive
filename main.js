@@ -73,9 +73,97 @@ console.log('La altura dividida es ' + calculartop(heighthome));
 
 bookcontainer.style = `top: ${calculartop(heighthome)}px `;
 
+const GOOGLE_SHEET_URL =
+	'https://script.google.com/macros/s/AKfycbw2HmTzWsWKM3DK0h3GDaN1aA1KF1QkoOO2Oq_hwGxyzfGfrAM6IZVHAVz-FBQ3J6pv/exec';
+
+const formHeading = document.querySelector('.booking_content');
+formHeading.addEventListener('submit', (e) => {
+	e.preventDefault();
+
+	const name = document.getElementById('name_contact_heading').value;
+	const phone = document.getElementById('phoneNumber_contact_heading').value;
+	const email = document.getElementById('email_contact_heading').value;
+	const description = document.getElementById(
+		'information_contact_heading'
+	).value;
+
+	// Define los valores a enviar a la hoja de cálculo
+	const values = [[name, phone, email, description]];
+
+	// Define el rango de celdas donde se insertarán los valores
+	const range = 'A1:D1';
+
+	// Envía los valores a la hoja de cálculo de Google Sheets
+	fetch(GOOGLE_SHEET_URL, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify({
+			values: values,
+			range: range,
+		}),
+	})
+		.then((response) => {
+			console.log(response);
+			console.log(
+				'Datos enviados correctamente a la hoja de cálculo de Google Sheets.'
+			);
+		})
+		.catch((error) => {
+			console.error(
+				'Error al enviar datos a la hoja de cálculo de Google Sheets:',
+				error
+			);
+		});
+});
+
+const formBottom = document.querySelector('.booking_content_bottom');
+formBottom.addEventListener('submit', (e) => {
+	e.preventDefault();
+
+	const name = document.getElementById('name_contact_bottom').value;
+	const phone = document.getElementById('phoneNumber_contact_bottom').value;
+	const email = document.getElementById('email_contact_bottom').value;
+	const description = document.getElementById(
+		'information_contact_bottom'
+	).value;
+
+	// Define los valores a enviar a la hoja de cálculo
+	const values = [[name, phone, email, description]];
+
+	// Define el rango de celdas donde se insertarán los valores
+	const range = 'A1:D1';
+
+	// Envía los valores a la hoja de cálculo de Google Sheets
+	fetch(GOOGLE_SHEET_URL, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify({
+			values: values,
+			range: range,
+		}),
+	})
+		.then((response) => {
+			console.log(response);
+			console.log(
+				'Datos enviados correctamente a la hoja de cálculo de Google Sheets.'
+			);
+		})
+		.catch((error) => {
+			console.error(
+				'Error al enviar datos a la hoja de cálculo de Google Sheets:',
+				error
+			);
+		});
+});
+
 
 //Boton de mas servicios
 
 document.getElementById("toServices").addEventListener("click", function() {
 	window.location.href = "./Servicespage/services.html";
 });
+

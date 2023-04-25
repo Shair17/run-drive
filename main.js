@@ -72,3 +72,10 @@ console.log('La altura del div es ' + heighthome);
 console.log('La altura dividida es ' + calculartop(heighthome));
 
 bookcontainer.style = `top: ${calculartop(heighthome)}px `;
+
+
+//Boton de mas servicios
+
+document.getElementById("toServices").addEventListener("click", function() {
+	window.location.href = "./Servicespage/services.html";
+});

@@ -43,6 +43,7 @@ html,
 body {
 	width: 100%;
 	height: 100%;
+	margin: 0px;
 }
 
 img {
@@ -291,17 +292,22 @@ body.menu-expanded button path {
 
 #home {
 	padding-top: calc(4.1rem + var(--nav-heigth));
-	background: url(../assets/images/MecanicServices.png);
-	background-size: cover;
-	height: fit-content;
-	width: 100vw;
-	display: flex;
+	margin: 0px;
+    width: 100vw;
+    height: 400px;
+    background: url(../assets/images/MecanicServices.png);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: right;
+    justify-content: flex-start;
+    display: flex;
+    align-items: first baseline;
 }
 
 
 #home h1 {
 	margin-bottom: 0.5rem;
-	font-size: 3.4rem;
+	font-size: 1.8rem;
 	color: rgba(0, 0, 0, 0.806);
 	line-height: 130%;
     padding: 20px;
@@ -330,18 +336,82 @@ body.menu-expanded button path {
 }
 
 .textcontainer{
-    background-color: #CDDCE4;
+    margin-top: 10%;
+	background-color: #CDDCE4;
     width: fit-content;
     height: 90px;
     text-align: center;
 }
 
 #home h1:nth-child(1){
-	margin-left: 52px;
+	margin-left: 60px;
 }
 
+/* AQUI COMIENZAN LOS ESTILOS DE LA SECCION DE HOJALATERIA Y PINTURA*/
 
+#serviceHojalateria{
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+.enlacesHorizontales{
+	display: flex;
+	flex-direction: row;
+	gap: 55px;
+	list-style: none;
+	width: 100vw;
+	justify-content: center;
+	height: fit-content;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.enlacesHorizontales li a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.8rem;
+}
+
+.enlacesHorizontales li a:hover{
+	opacity: 0.5;
+	transition-duration: 0.3s;
+}
+
+/*CARD DE DESCRIPCIÓN*/
+
+.descripcionservice{
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: fit-content;
+}
+
+.textContainer{
+	background-color: red;
+	height: fit-content;
+
+}
+
+.textContainer p{
+	text-align: start;
+}
+
+/* ASIDE CONFIGURACION */
+
+.asideServices{
+	width: 30vw;
+	height: fit-content;
+	float: left;
+	background: #e8dbdb;
+}
+
+.asideServices h1{
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 500;
+}
 
 @media (min-width: 1024px) {
 	/* ============== GERAL ================ */
@@ -472,4 +542,19 @@ body.menu-expanded button path {
 	.whatsapp svg {
 		color: #fff !important;
 	}
+
+
+	/* ZONA DE HOJALATERIA Y PINTURA */
+	.descripcionservice{
+		width: 70vw;
+	}
 }
+
+@media only screen and (max-width: 768px) {
+	.enlacesHorizontales {
+	  display: none;
+	}
+	.asideServices{
+		display: none;
+	}
+  }

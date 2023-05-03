@@ -1,6 +1,8 @@
 
 /* =========== GERAL ============ */
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
 *,
 ::before,
 ::after {
@@ -352,8 +354,11 @@ body.menu-expanded button path {
 #serviceHojalateria{
 	width: 100vw;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
+	background-color: green;
+	padding: 0px;
+	height: fit-content;
 }
 
 .enlacesHorizontales{
@@ -389,13 +394,16 @@ body.menu-expanded button path {
 }
 
 .textContainer{
-	background-color: red;
 	height: fit-content;
+	padding: 0px 20px;
 
 }
 
 .textContainer p{
 	text-align: start;
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 400;
 }
 
 /* ASIDE CONFIGURACION */
@@ -405,13 +413,39 @@ body.menu-expanded button path {
 	height: fit-content;
 	float: left;
 	background: #e8dbdb;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .asideServices h1{
 	font-family: 'DM Sans';
 	font-style: normal;
 	font-weight: 500;
+	font-size: 22px;
 }
+
+.titleAside{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+}
+
+.listTitle1{
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+}
+.listTitle1 ul{
+	padding-left: 0;
+}
+
+.listTitle1.show {
+	max-height: 200px; /* ajusta el valor según tus necesidades */
+  }
 
 @media (min-width: 1024px) {
 	/* ============== GERAL ================ */

@@ -415,8 +415,9 @@ body.menu-expanded button path {
 	background: #e8dbdb;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
+	height: 900px;
 }
 
 .asideServices h1{
@@ -426,26 +427,115 @@ body.menu-expanded button path {
 	font-size: 22px;
 }
 
-.titleAside{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 8px;
-	cursor: pointer;
-}
+
+
+
+/* List 1 */
 
 .listTitle1{
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.3s ease-out;
 }
+
 .listTitle1 ul{
 	padding-left: 0;
 }
 
-.listTitle1.show {
-	max-height: 200px; /* ajusta el valor según tus necesidades */
-  }
+#arrowone{
+	transition: transform 0.3s ease-in-out;
+}
+
+.textClickTitle1{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+}
+
+/* List 2 */
+
+.listTitle2{
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+}
+
+.listTitle2 ul{
+	padding-left: 0;
+}
+
+#arrowtwo{
+	transition: transform 0.3s ease-in-out;
+}
+
+.textClickTitle2{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+}
+
+/* List 3 */
+
+.listTitle3{
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+}
+
+.listTitle3 ul{
+	padding-left: 0;
+}
+
+#arrowthree{
+	transition: transform 0.3s ease-in-out;
+}
+
+.textClickTitle3{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+}
+
+/* List 4 */
+
+.listTitle4{
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+}
+
+.listTitle4 ul{
+	padding-left: 0;
+}
+
+#arrowfour{
+	transition: transform 0.3s ease-in-out;
+}
+
+.textClickTitle4{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+}
+
+/* CLASES REUSABLES*/
+
+.show{
+	max-height: 500px; /* Cambia el valor a lo que desees */
+	transition: max-height 0.3s ease-in;
+}
+
+.rotate-down {
+	transform: rotate(90deg);
+}
 
 @media (min-width: 1024px) {
 	/* ============== GERAL ================ */
@@ -582,13 +672,15 @@ body.menu-expanded button path {
 	.descripcionservice{
 		width: 70vw;
 	}
+
+	
 }
 
 @media only screen and (max-width: 768px) {
 	.enlacesHorizontales {
-	  display: none;
+		display: none;
 	}
 	.asideServices{
 		display: none;
 	}
-  }
+}

@@ -1,5 +1,5 @@
-import '../Servicespage/normalize.css';
-import '../Servicespage/services.css';
+import './normalize.css';
+import './services.css';
 
 const $ = (el) => document.querySelector(el);
 const btnMenuOpen = $('.open-menu');
@@ -51,14 +51,40 @@ btnMenuOpen.addEventListener('click', openMenu);
 btnMenuClose.addEventListener('click', closeMenu);
 document.addEventListener('scroll', onScroll);
 
+console.log("Hola")
 
-$('.text-click-title1').click(function() {
-	alert("Hola");
+//JAVASCRIPT DEL TOOGLE LIST DEL ASIDE DE ESCRITORIO
+
+const arrowone = document.getElementById('arrowone');
+const title1 = document.querySelector('.textClickTitle1');
+const listTitle1 = document.querySelector('.listTitle1');
+
+title1.addEventListener('click', function() {
+	listTitle1.classList.toggle('show');
+	arrowone.classList.toggle('rotate-down');
 });
 
-/*
-$('.text-click-title1').click(function() {
-	$('.listTitle1').toggleClass('show');
+
+const arrowtwo = document.getElementById('arrowtwo');
+const title2 = document.querySelector('.textClickTitle2');
+const listTitle2 = document.querySelector('.listTitle2');
+title2.addEventListener('click', function() {
+	listTitle2.classList.toggle('show');
+	arrowtwo.classList.toggle('rotate-down');
 });
 
-*/
+const arrowthree = document.getElementById('arrowthree');
+const title3 = document.querySelector('.textClickTitle3');
+const listTitle3 = document.querySelector('.listTitle3');
+title3.addEventListener('click', function() {
+	listTitle3.classList.toggle('show');
+	arrowthree.classList.toggle('rotate-down');
+});
+
+const arrowfour = document.getElementById('arrowfour');
+const title4 = document.querySelector('.textClickTitle4');
+const listTitle4 = document.querySelector('.listTitle4');
+title4.addEventListener('click', function() {
+	listTitle4.classList.toggle('show');
+	arrowfour.classList.toggle('rotate-down');
+});

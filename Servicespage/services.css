@@ -356,7 +356,7 @@ body.menu-expanded button path {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	background-color: green;
+	
 	padding: 0px;
 	height: fit-content;
 }
@@ -409,25 +409,48 @@ body.menu-expanded button path {
 /* ASIDE CONFIGURACION */
 
 .asideServices{
-	width: 30vw;
+	width: 35vw;
+	margin-left: 1vw;
 	height: fit-content;
 	float: left;
 	background: #e8dbdb;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-start;
 	height: 900px;
 }
 
-.asideServices h1{
+.asideServices .titleAsideConatainer{
+	margin-top: 12px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.asideServices .titleAsideConatainer h1{
 	font-family: 'DM Sans';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 22px;
 }
 
+.marginLeftTitleList{
+	margin-left: 10%;
+}
 
+
+
+.marginLeftList ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.marginLeftList{
+	width: 100%;
+	display: flex;
+	padding-left: 15%;
+}
 
 
 /* List 1 */
@@ -670,13 +693,13 @@ body.menu-expanded button path {
 
 	/* ZONA DE HOJALATERIA Y PINTURA */
 	.descripcionservice{
-		width: 70vw;
+		width: 60vw;
 	}
 
 	
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
 	.enlacesHorizontales {
 		display: none;
 	}

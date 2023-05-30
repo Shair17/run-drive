@@ -100,6 +100,13 @@ var galery1 = document.getElementById("galery1div");
 var boton2 = document.getElementById("buttonaction2");
 var galery2 = document.getElementById("galery2div");
 
+// Obtén una referencia al botón y al div 3
+var boton3 = document.getElementById("buttonaction3");
+var galery3 = document.getElementById("galery3div");
+
+// Obtén una referencia al botón y al div 4
+var boton4 = document.getElementById("buttonaction4");
+var galery4 = document.getElementById("galery4div");
 
 
 // Agrega un evento al botón 1
@@ -118,3 +125,21 @@ boton2.addEventListener("click", function() {
   galery1.classList.add("ocultaar")
 });
 
+
+// Agrega un evento al botón 1
+boton3.addEventListener("click", function() {
+	// Agrega la clase al div 1
+	galery3.classList.add("mostraar");
+	galery4.classList.remove("mostraar");
+	galery3.classList.remove("ocultaar");
+  });
+  
+  // Agrega un evento al botón 2
+  boton4.addEventListener("click", function() {
+	// Agrega la clase al div 2
+	galery3.classList.remove("mostraar");
+	galery4.classList.add("mostraar");
+	galery3.classList.add("ocultaar")
+  });
+  
+  

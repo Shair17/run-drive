@@ -3,6 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
+
+li{
+	text-align: left;
+}
+
 *,
 ::before,
 ::after {
@@ -420,7 +425,7 @@ body.menu-expanded button path {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	height: 900px;
+	min-height: 500px;
 }
 
 .asideServices .titleAsideConatainer{
@@ -579,8 +584,9 @@ body.menu-expanded button path {
 }
 
 /* Comienzan los estilos de la galería */
-/* Contenedor 1*/
 
+
+/* Contenedor 1*/
 .galery-container1{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -619,6 +625,46 @@ body.menu-expanded button path {
 
 }
 
+
+/* Galería autolavado*/
+
+/* Contenedor 3*/
+.galery-container3{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 150px;
+	padding: 10px;
+	grid-gap: 10px;
+	width: 100%;
+}
+.galery__img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.galeryitem3:nth-child(1){
+	grid-column-start: span 2;
+}
+.galeryitem3:nth-child(4){
+	grid-column-start: span 2;
+}
+
+/* Contenedor 4*/
+.galery-container4{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 150px;
+	padding: 10px;
+	grid-gap: 10px;
+	width: 100%;
+	display: none;
+}
+
+.galeryitem4:nth-child(2){
+	grid-column-start: span 2;
+
+}
+
 /*Estilos del dashboard debajo de imagenes*/
 .dashControl{
 	height: 10%;
@@ -626,8 +672,6 @@ body.menu-expanded button path {
 	width: 100%;
 	align-items: center;
 	justify-content: flex-start;
-
-
 }
 
 .button {

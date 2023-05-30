@@ -356,7 +356,6 @@ body.menu-expanded button path {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	
 	padding: 0px;
 	height: fit-content;
 }
@@ -391,6 +390,9 @@ body.menu-expanded button path {
 	flex-direction: column;
 	width: 100vw;
 	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .textContainer{
@@ -560,6 +562,121 @@ body.menu-expanded button path {
 	transform: rotate(90deg);
 }
 
+
+
+/* Contenedor padre de la galería */
+.galery{
+	width: 90%;
+	height: fit-content;
+}
+
+/*Div contenedor de las imagenes*/
+.imagesContent{
+	height: 90%;
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* Comienzan los estilos de la galería */
+/* Contenedor 1*/
+
+.galery-container1{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 150px;
+	padding: 10px;
+	grid-gap: 10px;
+	width: 100%;
+
+
+}
+.galery__img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.galeryitem:nth-child(1){
+	grid-column-start: span 2;
+}
+.galeryitem:nth-child(4){
+	grid-column-start: span 2;
+}
+
+/* Contenedor 2*/
+.galery-container2{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 150px;
+	padding: 10px;
+	grid-gap: 10px;
+	width: 100%;
+	display: none;
+}
+
+.galeryitem2:nth-child(2){
+	grid-column-start: span 2;
+
+}
+
+/*Estilos del dashboard debajo de imagenes*/
+.dashControl{
+	height: 10%;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: flex-start;
+
+
+}
+
+.button {
+    background-color: #5B5B5B; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #5B5B5B;
+}
+
+.button1:hover {
+    background-color: #5B5B5B;
+    color: white;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #5B5B5B;
+}
+
+.button2:hover {
+    background-color: #5B5B5B;
+    color: white;
+}
+
+/*Clases reusables para insertar en JS*/
+.mostraar {
+	display: grid;
+}
+
+.ocultaar{
+	display: none;
+}
+
+
 @media (min-width: 1024px) {
 	/* ============== GERAL ================ */
 	body {
@@ -694,6 +811,9 @@ body.menu-expanded button path {
 	/* ZONA DE HOJALATERIA Y PINTURA */
 	.descripcionservice{
 		width: 60vw;
+		align-items: center;
+		display: flex;
+		justify-content: center;
 	}
 
 	

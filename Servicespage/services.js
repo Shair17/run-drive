@@ -88,3 +88,33 @@ title4.addEventListener('click', function() {
 	listTitle4.classList.toggle('show');
 	arrowfour.classList.toggle('rotate-down');
 });
+
+
+//Funciones para mostrar divs de galería
+
+// Obtén una referencia al botón y al div 1
+var boton1 = document.getElementById("buttonaction1");
+var galery1 = document.getElementById("galery1div");
+
+// Obtén una referencia al botón y al div 2
+var boton2 = document.getElementById("buttonaction2");
+var galery2 = document.getElementById("galery2div");
+
+
+
+// Agrega un evento al botón 1
+boton1.addEventListener("click", function() {
+  // Agrega la clase al div 1
+  galery1.classList.add("mostraar");
+  galery2.classList.remove("mostraar");
+  galery1.classList.remove("ocultaar");
+});
+
+// Agrega un evento al botón 2
+boton2.addEventListener("click", function() {
+  // Agrega la clase al div 2
+  galery1.classList.remove("mostraar");
+  galery2.classList.add("mostraar");
+  galery1.classList.add("ocultaar")
+});
+

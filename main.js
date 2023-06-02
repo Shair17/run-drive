@@ -159,11 +159,3 @@ formBottom.addEventListener('submit', (e) => {
 			);
 		});
 });
-
-
-//Boton de mas servicios
-
-document.getElementById("toServices").addEventListener("click", function() {
-	window.location.href = "./Servicespage/services.html";
-});
-

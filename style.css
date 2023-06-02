@@ -366,6 +366,23 @@ body.menu-expanded button path {
 	object-position: 0 2rem;
 }
 
+.link {
+	background-color: var(--primary-color);
+	border: none;
+	border-radius: 4rem;
+	padding: 1.6rem 3.2rem;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
 #home button {
 	background-color: var(--primary-color);
 	border: none;
@@ -686,7 +703,7 @@ textarea:focus {
 	margin-bottom: 6rem;
 }
 
-.buttoncontainer{
+.buttoncontainer {
 	margin-top: 25px;
 	width: 100%;
 	height: fit-content;
@@ -694,7 +711,7 @@ textarea:focus {
 	justify-content: center;
 	align-items: center;
 }
-.buttoncontainer button{
+.buttoncontainer button {
 	background-color: var(--primary-color);
 	border: none;
 	border-radius: 4rem;
@@ -708,8 +725,6 @@ textarea:focus {
 	justify-content: center;
 	height: 50px;
 }
-
-
 
 .snap-center {
 	scroll-snap-align: center;
